@@ -24,8 +24,7 @@ namespace AuthorizationDatabase
                     config.Password.RequireNonAlphanumeric = false;
                     config.Password.RequiredLength = 6;
                 })
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
             // Doesn't work with Identity4
