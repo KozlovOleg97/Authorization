@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authorization.Users.API", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authorization.IdentityServer", "Authorization.IdentityServer\Authorization.IdentityServer.csproj", "{D8F5CCAA-25FF-4E5D-AA19-379843B82097}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authorization.Client.MVC", "Authorization.Client.MVC\Authorization.Client.MVC.csproj", "{FEF27B15-2F1F-44C5-B210-3513316CC9CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{D8F5CCAA-25FF-4E5D-AA19-379843B82097}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8F5CCAA-25FF-4E5D-AA19-379843B82097}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8F5CCAA-25FF-4E5D-AA19-379843B82097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF27B15-2F1F-44C5-B210-3513316CC9CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF27B15-2F1F-44C5-B210-3513316CC9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF27B15-2F1F-44C5-B210-3513316CC9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF27B15-2F1F-44C5-B210-3513316CC9CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

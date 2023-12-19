@@ -3,9 +3,9 @@
     "http": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": false,
-      "launchUrl": "site/index",
-      "applicationUrl": "http://localhost:9000",
+      "launchBrowser": true,
+      "launchUrl": "siteClient/index",
+      "applicationUrl": "http://localhost:2000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -13,9 +13,9 @@
     "https": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": false,
-      "launchUrl": "site/index",
-      "applicationUrl": "https://localhost:9001;http://localhost:9000",
+      "launchBrowser": true,
+      "launchUrl": "siteClient/index",
+      "applicationUrl": "https://localhost:2001;http://localhost:2000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

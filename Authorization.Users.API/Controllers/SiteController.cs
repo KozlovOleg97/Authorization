@@ -31,7 +31,7 @@ namespace Authorization.Users.API.Controllers
             // RETRIEVE TO IDENTITYSERVER
 
             var authClient = _httpClientFactory.CreateClient();
-            var disvoveryDocument = await authClient.GetDiscoveryDocumentAsync("http://localhost:10000");
+            var disvoveryDocument = await authClient.GetDiscoveryDocumentAsync("https://localhost:10001");
 
             var tokenResponse = await authClient.RequestClientCredentialsTokenAsync(
                 new ClientCredentialsTokenRequest
@@ -51,7 +51,7 @@ namespace Authorization.Users.API.Controllers
             ordersClient.SetBearerToken(tokenResponse.AccessToken);
 
 
-            var response = await ordersClient.GetAsync("http://localhost:5000/site/secret");
+            var response = await ordersClient.GetAsync("https://localhost:5001/site/secret");
 
 
             if (!response.IsSuccessStatusCode)
