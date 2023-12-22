@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace Authorization.Client.MVC.Controllers
 {
     [Route("[controller]")]
-    public class SiteClientController : Controller
+    public class SiteController : Controller
     {
-        [AllowAnonymous]
         [Route("[action]")]
         public IActionResult Index()
         {
