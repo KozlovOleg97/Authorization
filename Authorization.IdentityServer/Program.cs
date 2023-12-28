@@ -34,7 +34,11 @@ namespace Authorization.IdentityServer
                 .AddInMemoryIdentityResources(Configuration.GetIdentityResources())
                 .AddDeveloperSigningCredential();
 
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews()
+                .AddRazorRuntimeCompilation();
+
+
+
 
             var app = builder.Build();
 

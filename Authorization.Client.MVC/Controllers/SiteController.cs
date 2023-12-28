@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Authorization.Client.MVC.ViewModels;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace Authorization.Client.MVC.Controllers
 {
@@ -14,9 +17,11 @@ namespace Authorization.Client.MVC.Controllers
 
         [Authorize]
         [Route("[action]")]
-        public IActionResult Secret()
+        public async Task<IActionResult> Secret()
         {
-            return View();
+            var model = new ClaimManager(HttpContext, User);
+
+            return View(model);
         }
     }
 }
